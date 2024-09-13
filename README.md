@@ -1,16 +1,20 @@
-# switch_app_bar
+# Switch App Bar
 
 Flutter project for switch app bar
 
-## Getting Started
+## Motivation
+This project clones the UI of TapTap mobile app, which has an overlay appbar appears whenever you scroll pass a portion of page
 
-This project is a starting point for a Flutter application.
+Reference 1 | Reference 2 | 
+:--: | :--: | 
+<video src="https://github.com/user-attachments/assets/eb652bd5-2d46-494b-9a0d-740665e40cf2"/> | <video src="https://github.com/user-attachments/assets/c625f888-8175-49d7-89a2-9cb9255361af"/> |
 
-A few resources to get you started if this is your first Flutter project:
+## How to use
+Wrap your children widgets with `SwitchAppBarWidget` and provide
+1. placeholderAppBar: the widget that acts as an AppBar when at init state of page
+2. overlayAppBar: the widget that act as an AppBar when user scroll pass `placeholderAppBar`
+3. transformSpeedScale: the speed of slide up/down transition of `overlayAppBar`
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Default transformSpeedScale | transformSpeedScale = 10 (10x faster) | 
+:--: | :--: | 
+<video src="https://github.com/user-attachments/assets/647a8832-7ae2-49d4-8de0-7490f5616f8f"/> | <video src="https://github.com/user-attachments/assets/f4fb31a5-3242-441b-9782-4e1bab550c08"/> |
